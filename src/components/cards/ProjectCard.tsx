@@ -21,7 +21,7 @@ export function ProjectCard({ proyecto }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden hover:shadow-md transition-shadow duration-300 group">
       {/* Imagen */}
-      <div className="relative aspect-video overflow-hidden">
+      <div className="relative aspect-video overflow-hidden cursor-pointer" onClick={handleVerMas} >
         <img 
           src={imagenPrincipal?.url || '/placeholder.svg'} 
           alt={proyecto.titulo}
