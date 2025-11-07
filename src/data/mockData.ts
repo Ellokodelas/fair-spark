@@ -30,24 +30,19 @@ export interface Seminario {
 }
 
 export const categorias = [
-  "Salud y Bienestar",
   "Industrias y Desarrollo",
   "Educación y Prevención",
-  "Health Tech",
-  "IoT",
-  "AI & Machine Learning",
-  "Mobile App",
-  "Web Development"
+  "Salud y Bienestar / Health Tech"
 ];
 
 export const mockProyectos: Proyecto[] = [
-  // Salud y Bienestar / Health Tech
+  // Salud y Bienestar / Salud y Bienestar / Health Tech
   {
     id: "1",
     titulo: "NeuroSight",
     descCorta: "Plataforma de diagnóstico neurológico asistido por IA para detección temprana de enfermedades cerebrales.",
     descLarga: "NeuroSight utiliza inteligencia artificial avanzada para analizar imágenes cerebrales y detectar patrones que pueden indicar enfermedades neurológicas en etapas tempranas. La plataforma ayuda a profesionales médicos a tomar decisiones más informadas y rápidas.",
-    categorias: ["Health Tech", "AI & Machine Learning"],
+    categorias: ["Salud y Bienestar / Health Tech", "AI & Machine Learning"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/NEUROSIGHT.png", esPrincipal: true }
     ],
@@ -64,7 +59,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "MoodTab",
     descCorta: "Aplicación de seguimiento del estado de ánimo con análisis predictivo para bienestar mental.",
     descLarga: "MoodTab es una herramienta digital que permite a los usuarios registrar y analizar su estado de ánimo diario. Utiliza algoritmos de machine learning para identificar patrones y proporcionar recomendaciones personalizadas de bienestar.",
-    categorias: ["Health Tech", "Mobile App"],
+    categorias: ["Salud y Bienestar / Health Tech", "Mobile App"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/MOODTAB.png", esPrincipal: true }
     ],
@@ -81,7 +76,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "RememberMe",
     descCorta: "Sistema de asistencia cognitiva para personas con deterioro de memoria y Alzheimer.",
     descLarga: "RememberMe es una aplicación que ayuda a personas con problemas de memoria mediante recordatorios inteligentes, reconocimiento facial de personas cercanas, y ejercicios cognitivos personalizados para mantener la mente activa.",
-    categorias: ["Health Tech", "AI & Machine Learning"],
+    categorias: ["Salud y Bienestar / Health Tech", "AI & Machine Learning"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/REMEMBERME.png", esPrincipal: true }
     ],
@@ -98,7 +93,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "KardIA",
     descCorta: "Monitoreo cardíaco inteligente con IA para detección de arritmias y problemas cardiovasculares.",
     descLarga: "KardIA es un sistema de monitoreo cardíaco continuo que utiliza sensores portátiles e inteligencia artificial para detectar arritmias, fibrilación auricular y otros problemas cardiovasculares en tiempo real, alertando al usuario y médicos cuando es necesario.",
-    categorias: ["Health Tech", "IoT"],
+    categorias: ["Salud y Bienestar / Health Tech", "IoT"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/KARDIA.png", esPrincipal: true }
     ],
@@ -115,7 +110,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "ÜSAFE",
     descCorta: "Plataforma de seguridad personal con botón de pánico y localización en tiempo real.",
     descLarga: "ÜSAFE es una aplicación móvil de seguridad personal que permite a los usuarios activar alertas de emergencia, compartir su ubicación en tiempo real con contactos de confianza, y acceder rápidamente a servicios de emergencia.",
-    categorias: ["Health Tech", "Mobile App"],
+    categorias: ["Salud y Bienestar / Health Tech", "Mobile App"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/USAFE.png", esPrincipal: true }
     ],
@@ -132,7 +127,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "ShiftGuard",
     descCorta: "Sistema de gestión y monitoreo de turnos médicos con alertas de fatiga.",
     descLarga: "ShiftGuard optimiza la programación de turnos del personal médico, monitoreando carga de trabajo y fatiga para prevenir errores médicos. Incluye alertas inteligentes y sugerencias de rotación óptima.",
-    categorias: ["Health Tech", "Web Development"],
+    categorias: ["Salud y Bienestar / Health Tech", "Web Development"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/SHIFTGUARDFC.png", esPrincipal: true }
     ],
@@ -149,7 +144,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "DonApp",
     descCorta: "Plataforma de donación de sangre que conecta donantes con bancos de sangre y pacientes.",
     descLarga: "DonApp facilita el proceso de donación de sangre conectando donantes voluntarios con hospitales y bancos de sangre. Incluye recordatorios de elegibilidad, búsqueda de centros cercanos y seguimiento del impacto de las donaciones.",
-    categorias: ["Health Tech", "Mobile App"],
+    categorias: ["Salud y Bienestar / Health Tech", "Mobile App"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/DONAPP.png", esPrincipal: true }
     ],
@@ -166,7 +161,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "Liviapp",
     descCorta: "Asistente virtual para pacientes con enfermedades crónicas y seguimiento de tratamientos.",
     descLarga: "Liviapp es un asistente de salud digital que ayuda a pacientes con enfermedades crónicas a gestionar medicamentos, citas médicas y síntomas. Proporciona recordatorios personalizados y permite compartir información con médicos tratantes.",
-    categorias: ["Health Tech", "AI & Machine Learning"],
+    categorias: ["Salud y Bienestar / Health Tech", "AI & Machine Learning"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/LIVIAPP.png", esPrincipal: true }
     ],
@@ -183,7 +178,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "Kompias",
     descCorta: "Red social de apoyo emocional y acompañamiento para personas con ansiedad y depresión.",
     descLarga: "Kompias es una comunidad digital segura donde personas que enfrentan desafíos de salud mental pueden conectarse, compartir experiencias y recibir apoyo. Incluye moderación profesional y recursos de autoayuda.",
-    categorias: ["Health Tech", "Web Development"],
+    categorias: ["Salud y Bienestar / Health Tech", "Web Development"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/KOMPIAS.png", esPrincipal: true }
     ],
@@ -200,7 +195,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "Vocare",
     descCorta: "Plataforma de telemedicina con diagnóstico asistido por IA y consultas virtuales.",
     descLarga: "Vocare revoluciona la atención médica remota combinando videoconsultas con herramientas de diagnóstico asistido por IA. Los médicos pueden realizar evaluaciones preliminares y los pacientes reciben atención de calidad desde casa.",
-    categorias: ["Health Tech", "AI & Machine Learning"],
+    categorias: ["Salud y Bienestar / Health Tech", "AI & Machine Learning"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/VOCAREFC.png", esPrincipal: true }
     ],
@@ -217,7 +212,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "Nura",
     descCorta: "Sistema de nutrición personalizada con IA basado en análisis genético y hábitos alimenticios.",
     descLarga: "Nura utiliza inteligencia artificial para crear planes nutricionales personalizados basados en el perfil genético, objetivos de salud y preferencias alimenticias de cada usuario. Incluye recetas personalizadas y seguimiento de progreso.",
-    categorias: ["Health Tech", "AI & Machine Learning"],
+    categorias: ["Salud y Bienestar / Health Tech", "AI & Machine Learning"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/NURA.png", esPrincipal: true }
     ],
@@ -234,7 +229,7 @@ export const mockProyectos: Proyecto[] = [
     titulo: "CEApp",
     descCorta: "Aplicación de ejercicios terapéuticos guiados para rehabilitación física con realidad aumentada.",
     descLarga: "CEApp es una herramienta de rehabilitación que utiliza realidad aumentada para guiar a pacientes a través de ejercicios terapéuticos. Rastrea el progreso, corrige posturas y se adapta al ritmo de cada usuario.",
-    categorias: ["Health Tech", "Mobile App"],
+    categorias: ["Salud y Bienestar / Health Tech", "Mobile App"],
     imagenes: [
       { url: "https://www.feriadesoftware.cl/wp-content/uploads/2025/09/CEAPP.png", esPrincipal: true }
     ],
