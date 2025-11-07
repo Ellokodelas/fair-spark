@@ -35,6 +35,16 @@ export const categorias = [
   "Salud y Bienestar / Health Tech"
 ];
 
+export const obtenerCategoriasUnicas = (): string[] => {
+  const todasCategorias = new Set<string>();
+  
+  mockProyectos.forEach(proyecto => {
+    proyecto.categorias.forEach(cat => todasCategorias.add(cat));
+  });
+  
+  return Array.from(todasCategorias).sort();
+};
+
 export const mockProyectos: Proyecto[] = [
   // Salud y Bienestar / Salud y Bienestar / Health Tech
   {
