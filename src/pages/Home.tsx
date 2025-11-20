@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { TopBar } from '@/components/layout/TopBar';
 import { ProjectCard } from '@/components/cards/ProjectCard';
 import { CategoryFilters } from '@/components/filters/CategoryFilters';
+import { WelcomePopup } from '@/components/ui/welcome-popup';
 import { mockProyectos } from '@/data/mockData';
 
 export default function Home() {
@@ -44,40 +45,47 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <TopBar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
+      <WelcomePopup />
       
       <main className="pt-20 pb-12">
-        <div className="container mx-auto px-4">
-          {/* Hero Section */}
-          <section className="text-center py-12 mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Feria de Software
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Descubre los proyectos más innovadores desarrollados por talentosos equipos de estudiantes
-            </p>
-            
-            {/* Estadísticas rápidas */}
-            <div className="flex justify-center space-x-8 text-center">
-              <div>
-                <div className="text-2xl font-bold text-primary">
-                  {mockProyectos.filter(p => p.estado === 'publicado').length}
+        {/* Hero Section con gradiente */}
+        <section className="gradient-hero text-white py-16 mb-12 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-blue-600/20 to-cyan-500/20"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center">
+              <h1 className="text-5xl md:text-6xl font-bold mb-4">
+                33ª Feria de Software USM
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                Descubre los proyectos más innovadores desarrollados por talentosos equipos de estudiantes
+              </p>
+              
+              {/* Estadísticas rápidas */}
+              <div className="flex justify-center gap-8 md:gap-12 flex-wrap">
+                <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded-lg border border-white/20">
+                  <div className="text-3xl font-bold">
+                    {mockProyectos.filter(p => p.estado === 'publicado').length}
+                  </div>
+                  <div className="text-sm opacity-90">Proyectos</div>
                 </div>
-                <div className="text-sm text-muted-foreground">Proyectos</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">
-                  {new Set(mockProyectos.flatMap(p => p.categorias)).size}
+                <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded-lg border border-white/20">
+                  <div className="text-3xl font-bold">
+                    {new Set(mockProyectos.flatMap(p => p.categorias)).size}
+                  </div>
+                  <div className="text-sm opacity-90">Categorías</div>
                 </div>
-                <div className="text-sm text-muted-foreground">Categorías</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">
-                  {mockProyectos.reduce((sum, p) => sum + p.metricas.vistas, 0)}
+                <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded-lg border border-white/20">
+                  <div className="text-3xl font-bold">
+                    {mockProyectos.reduce((sum, p) => sum + p.metricas.vistas, 0)}
+                  </div>
+                  <div className="text-sm opacity-90">Visualizaciones</div>
                 </div>
-                <div className="text-sm text-muted-foreground">Visualizaciones</div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
+        
+        <div className="container mx-auto px-4">
 
           {/* Filtros */}
           <section className="mb-8">
