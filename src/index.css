@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Feria de Software - Paleta Naranjo y Blanco */
+    /* Feria de Software - Paleta Naranjo y Blanco con gradientes vibrantes */
     --background: 0 0% 100%;
     --foreground: 0 0% 27%;
 
@@ -46,6 +46,11 @@ All colors MUST be HSL.
     --ring: 28 100% 50%;
 
     --radius: 0.5rem;
+    
+    /* Gradientes vibrantes inspirados en FESW */
+    --gradient-hero: linear-gradient(135deg, #1a1a3e 0%, #0f2557 50%, #1a5490 100%);
+    --gradient-accent: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    --gradient-vibrant: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
 
     --sidebar-background: 0 0% 98%;
 
@@ -133,5 +138,17 @@ All colors MUST be HSL.
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-vibrant {
+    background: var(--gradient-vibrant);
   }
 }

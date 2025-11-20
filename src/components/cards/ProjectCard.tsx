@@ -21,11 +21,11 @@ export function ProjectCard({ proyecto }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden hover:shadow-md transition-shadow duration-300 group">
       {/* Imagen */}
-      <div className="relative aspect-video overflow-hidden cursor-pointer" onClick={handleVerMas} >
+      <div className="relative aspect-video overflow-hidden cursor-pointer bg-muted" onClick={handleVerMas} >
         <img 
           src={imagenPrincipal?.url || '/placeholder.svg'} 
           alt={proyecto.titulo}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-3 right-3">
           <Badge 
